@@ -1,0 +1,61 @@
+{% set name = "tiledb-vector-search" %}
+{% set version = "0.0.1" %}
+#{% set sha256 = "ac01357ed1f793fe96f728e4abb4965c7303918510cec38fda1ea5ef5ad47643" %}
+
+package:
+  name: {{ name }}
+  version: {{ version }}
+
+source:
+  #url: https://github.com/TileDB-Inc/feature-vector-prototype/archive/{{ version }}.tar.gz
+  url: https://github.com/TileDB-Inc/feature-vector-prototype/archive/main.tar.gz
+#  sha256: {{ sha256 }}
+
+build:
+  number: 1
+  skip: true  # [win32]
+  skip: true  # [win and py2k]
+requirements:
+  build:
+    - {{ compiler('cxx') }}
+    - python                                 # [build_platform != target_platform]
+    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
+    - cython                                 # [build_platform != target_platform]
+    - numpy                                  # [build_platform != target_platform]
+    - pybind11                               # [build_platform != target_platform]
+  host:
+    - pip
+    - wheel
+    - setuptools
+    - setuptools_scm
+    - python
+    - cython
+    - numpy
+    - pybind11
+    - tiledb 2.15.*
+  run:
+    - python
+    - {{ pin_compatible('numpy') }}
+    - dataclasses  # [py == 36]
+    - contextvars  # [py == 36]
+    - packaging
+
+about:
+  home: http://tiledb.io
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: TileDB Vector Search
+  description: |
+    TileDB-Vector-Search is the python interface to the TileDB array storage manager.
+    TileDB  is an efficient multi-dimensional array management system which introduces
+    a novel on-disk format that can store dense and sparse array data with
+    support for fast reads and updates and reads. It features excellent compression, and an efficient
+    parallel I/O system with high scalability.
+  doc_url: https://api-reference.tiledb.io/python-api.html
+  dev_url: https://github.com/TileDB-Inc/TileDB-Py
+
+extra:
+  recipe-maintainers:
+    - shelnutt2
+    - ihnorton
