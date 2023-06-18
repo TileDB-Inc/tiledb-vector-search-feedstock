@@ -64,8 +64,8 @@ about:
     a novel on-disk format that can store dense and sparse array data with
     support for fast reads and updates and reads. It features excellent compression, and an efficient
     parallel I/O system with high scalability.
-  doc_url: https://api-reference.tiledb.io/python-api.html
-  dev_url: https://github.com/TileDB-Inc/TileDB-Py
+  doc_url: https://github.io/TileDB-Inc/TileDB-Vector-Search
+  dev_url: https://github.com/TileDB-Inc/TileDB-Vector-Search
 
 extra:
   recipe-maintainers:
