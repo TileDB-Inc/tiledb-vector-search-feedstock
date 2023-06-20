@@ -12,7 +12,7 @@ source:
   #url: https://github.com/TileDB-Inc/feature-vector-prototype/archive/main.tar.gz
   #url: https://github.com/TileDB-Inc/feature-vector-prototype/archive/gitattributes.tar.gz
   git_url: https://github.com/TileDB-Inc/TileDB-Vector-Search.git
-  git_rev: main
+  git_rev: ss/set-cmake-flags-based-on-selected-processor
   #git_depth: 1 # (Defaults to -1/not shallow)
 #  sha256: {{ sha256 }}
 
