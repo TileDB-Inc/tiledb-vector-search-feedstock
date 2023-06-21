@@ -7,12 +7,17 @@ package:
   version: {{ version }}
 
 source:
+  #path: "/home/conda/feature-vector-prototype"
   #url: https://github.com/TileDB-Inc/feature-vector-prototype/archive/{{ version }}.tar.gz
-  url: https://github.com/TileDB-Inc/feature-vector-prototype/archive/main.tar.gz
+  #url: https://github.com/TileDB-Inc/feature-vector-prototype/archive/main.tar.gz
+  #url: https://github.com/TileDB-Inc/feature-vector-prototype/archive/gitattributes.tar.gz
+  git_url: https://github.com/TileDB-Inc/TileDB-Vector-Search.git
+  git_rev: main
+  #git_depth: 1 # (Defaults to -1/not shallow)
 #  sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 2
   skip: true  # [win32]
   skip: true  # [win and py2k]
 requirements:
@@ -20,25 +25,33 @@ requirements:
     - {{ compiler('cxx') }}
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
-    - cython                                 # [build_platform != target_platform]
     - numpy                                  # [build_platform != target_platform]
     - pybind11                               # [build_platform != target_platform]
+    - cmake
+    - make  # [not win]
+    - libopenblas                            # [build_platform != target_platform]
+    - openblas                            # [build_platform != target_platform]
   host:
     - pip
     - wheel
     - setuptools
     - setuptools_scm
     - python
-    - cython
     - numpy
     - pybind11
     - tiledb 2.15.*
+    - tiledb-py
+    - scikit-build
+    - libopenblas
+    - openblas
   run:
     - python
     - {{ pin_compatible('numpy') }}
-    - dataclasses  # [py == 36]
-    - contextvars  # [py == 36]
-    - packaging
+    - tiledb 2.15.*
+    - tiledb-py
+    - scikit-build
+    - libopenblas
+    - openblas
 
 about:
   home: http://tiledb.io
@@ -52,8 +65,8 @@ about:
     a novel on-disk format that can store dense and sparse array data with
     support for fast reads and updates and reads. It features excellent compression, and an efficient
     parallel I/O system with high scalability.
-  doc_url: https://api-reference.tiledb.io/python-api.html
-  dev_url: https://github.com/TileDB-Inc/TileDB-Py
+  doc_url: https://github.io/TileDB-Inc/TileDB-Vector-Search
+  dev_url: https://github.com/TileDB-Inc/TileDB-Vector-Search
 
 extra:
   recipe-maintainers:
