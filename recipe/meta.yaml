@@ -7,19 +7,17 @@ package:
   version: {{ version }}
 
 source:
-  #path: "/home/conda/feature-vector-prototype"
   #url: https://github.com/TileDB-Inc/feature-vector-prototype/archive/{{ version }}.tar.gz
-  #url: https://github.com/TileDB-Inc/feature-vector-prototype/archive/main.tar.gz
-  #url: https://github.com/TileDB-Inc/feature-vector-prototype/archive/gitattributes.tar.gz
   git_url: https://github.com/TileDB-Inc/TileDB-Vector-Search.git
-  git_rev: main
+  git_rev: {{ version }}
   #git_depth: 1 # (Defaults to -1/not shallow)
 #  sha256: {{ sha256 }}
 
 build:
-  number: 2
+  number: 3
   skip: true  # [win32]
   skip: true  # [win and py2k]
+  skip: true  # [win]
 requirements:
   build:
     - {{ compiler('cxx') }}
