@@ -82,6 +82,7 @@ jobs:
         set "TEMP=$(UPLOAD_TEMP)"
         if not exist "%TEMP%\" md "%TEMP%"
         set "TMP=%TEMP%"
+        set "UPLOAD_ON_BRANCH=main"
         call activate base
         upload_package --validate --feedstock-name="%FEEDSTOCK_NAME%" .\ ".\recipe" .ci_support\%CONFIG%.yaml
       displayName: Upload package
