@@ -59,11 +59,9 @@ about:
   license_file: LICENSE
   summary: TileDB Vector Search
   description: |
-    TileDB-Vector-Search is the python interface to the TileDB array storage manager.
-    TileDB  is an efficient multi-dimensional array management system which introduces
-    a novel on-disk format that can store dense and sparse array data with
-    support for fast reads and updates and reads. It features excellent compression, and an efficient
-    parallel I/O system with high scalability.
+    TileDB Vector Search is an open source, lightweight, embeddable, and cloud-native
+    vector similarity search database implemented in high-performance C++ with an easy
+    Python API.
   doc_url: https://github.io/TileDB-Inc/TileDB-Vector-Search
   dev_url: https://github.com/TileDB-Inc/TileDB-Vector-Search
 
