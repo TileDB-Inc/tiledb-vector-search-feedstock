@@ -1,5 +1,5 @@
 {% set name = "tiledb-vector-search" %}
-{% set version = "0.0.6" %}
+{% set version = "0.0.7" %}
 {% set sha256 = "22c244d7206a0f862d7c05d5c36f896fb31c617c0b3997277bf6ef6afcaf5685" %}
 
 package:
@@ -16,9 +16,6 @@ source:
 
 build:
   number: 0
-  skip: true  # [win32]
-  skip: true  # [win and py2k]
-  skip: true  # [win]
 requirements:
   build:
     - {{ compiler('cxx') }}
@@ -62,7 +59,7 @@ about:
     TileDB Vector Search is an open source, lightweight, embeddable, and cloud-native
     vector similarity search database implemented in high-performance C++ with an easy
     Python API.
-  doc_url: https://github.io/TileDB-Inc/TileDB-Vector-Search
+  doc_url: https://tiledb-inc.github.io/TileDB-Vector-Search
   dev_url: https://github.com/TileDB-Inc/TileDB-Vector-Search
 
 extra:
