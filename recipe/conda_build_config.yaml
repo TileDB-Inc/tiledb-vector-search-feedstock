@@ -8,3 +8,7 @@ channel_sources:
   - conda-forge
 channel_priority:
   - strict
+tiledb:
+- '2.15.*'
+- '2.16.*'
+

@@ -15,7 +15,7 @@ source:
   #git_depth: 1 # (Defaults to -1/not shallow)
 
 build:
-  number: 0
+  number: 1
 requirements:
   build:
     - {{ compiler('cxx') }}
@@ -35,7 +35,7 @@ requirements:
     - python
     - numpy
     - pybind11
-    - tiledb 2.16.*
+    - tiledb
     - tiledb-py
     - scikit-build
     - libopenblas
@@ -43,9 +43,9 @@ requirements:
   run:
     - python
     - {{ pin_compatible('numpy') }}
-    - tiledb 2.16.*
+    - tiledb
+    - scikit-learn
     - tiledb-py
-    - scikit-build
     - libopenblas
     - openblas
 
