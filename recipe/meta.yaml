@@ -35,7 +35,7 @@ requirements:
     - python
     - numpy
     - pybind11
-    - tiledb 2.16.*
+    - tiledb
     - tiledb-py
     - scikit-build
     - libopenblas
@@ -43,9 +43,8 @@ requirements:
   run:
     - python
     - {{ pin_compatible('numpy') }}
-    - tiledb 2.16.*
+    - tiledb
     - tiledb-py
-    - scikit-build
     - libopenblas
     - openblas
 
