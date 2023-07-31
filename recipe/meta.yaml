@@ -1,5 +1,5 @@
 {% set name = "tiledb-vector-search" %}
-{% set version = "0.0.7" %}
+{% set version = "0.0.8" %}
 {% set sha256 = "22c244d7206a0f862d7c05d5c36f896fb31c617c0b3997277bf6ef6afcaf5685" %}
 
 package:
@@ -15,7 +15,7 @@ source:
   #git_depth: 1 # (Defaults to -1/not shallow)
 
 build:
-  number: 1
+  number: 0
 requirements:
   build:
     - {{ compiler('cxx') }}
