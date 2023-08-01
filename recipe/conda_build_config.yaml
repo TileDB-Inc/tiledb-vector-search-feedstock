@@ -11,4 +11,15 @@ channel_priority:
 tiledb:
 - '2.15.*'
 - '2.16.*'
-
+numpy:
+  - 1.21
+  - 1.21
+  - 1.23
+python:
+  - 3.9.* *_cpython
+  - 3.10.* *_cpython
+  - 3.11.* *_cpython
+python_impl:
+  - cpython
+  - cpython
+  - cpython
