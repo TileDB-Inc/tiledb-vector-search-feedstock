@@ -50,7 +50,7 @@ requirements:
     - openblas
 
 about:
-  home: http://tiledb.io
+  home: http://tiledb.com
   license: MIT
   license_family: MIT
   license_file: LICENSE
