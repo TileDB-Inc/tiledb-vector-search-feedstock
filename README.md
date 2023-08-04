@@ -3,7 +3,7 @@ About tiledb-vector-search-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/tiledb-vector-search-feedstock/blob/main/LICENSE.txt)
 
-Home: http://tiledb.com
+Home: https://tiledb.com
 
 Package license: MIT
 
