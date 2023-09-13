@@ -1,5 +1,5 @@
 {% set name = "tiledb-vector-search" %}
-{% set version = "0.0.10" %}
+{% set version = "0.0.13" %}
 {% set sha256 = "81192cfe063af6c3542803159d90c9b5402401e0f64dfeedd6f124f8fc95665c" %}
 
 package:
