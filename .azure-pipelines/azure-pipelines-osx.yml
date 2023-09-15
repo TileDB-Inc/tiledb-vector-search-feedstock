@@ -8,41 +8,23 @@ jobs:
     vmImage: macOS-11
   strategy:
     matrix:
-      osx_64_numpy1.21python3.10.____cpythontiledb2.15._:
-        CONFIG: osx_64_numpy1.21python3.10.____cpythontiledb2.15._
+      osx_64_numpy1.22python3.10.____cpython:
+        CONFIG: osx_64_numpy1.22python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
-      osx_64_numpy1.21python3.10.____cpythontiledb2.16._:
-        CONFIG: osx_64_numpy1.21python3.10.____cpythontiledb2.16._
+      osx_64_numpy1.22python3.9.____cpython:
+        CONFIG: osx_64_numpy1.22python3.9.____cpython
         UPLOAD_PACKAGES: 'True'
-      osx_64_numpy1.21python3.9.____cpythontiledb2.15._:
-        CONFIG: osx_64_numpy1.21python3.9.____cpythontiledb2.15._
+      osx_64_numpy1.23python3.11.____cpython:
+        CONFIG: osx_64_numpy1.23python3.11.____cpython
         UPLOAD_PACKAGES: 'True'
-      osx_64_numpy1.21python3.9.____cpythontiledb2.16._:
-        CONFIG: osx_64_numpy1.21python3.9.____cpythontiledb2.16._
+      osx_arm64_numpy1.22python3.10.____cpython:
+        CONFIG: osx_arm64_numpy1.22python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
-      osx_64_numpy1.23python3.11.____cpythontiledb2.15._:
-        CONFIG: osx_64_numpy1.23python3.11.____cpythontiledb2.15._
+      osx_arm64_numpy1.22python3.9.____cpython:
+        CONFIG: osx_arm64_numpy1.22python3.9.____cpython
         UPLOAD_PACKAGES: 'True'
-      osx_64_numpy1.23python3.11.____cpythontiledb2.16._:
-        CONFIG: osx_64_numpy1.23python3.11.____cpythontiledb2.16._
-        UPLOAD_PACKAGES: 'True'
-      osx_arm64_numpy1.21python3.10.____cpythontiledb2.15._:
-        CONFIG: osx_arm64_numpy1.21python3.10.____cpythontiledb2.15._
-        UPLOAD_PACKAGES: 'True'
-      osx_arm64_numpy1.21python3.10.____cpythontiledb2.16._:
-        CONFIG: osx_arm64_numpy1.21python3.10.____cpythontiledb2.16._
-        UPLOAD_PACKAGES: 'True'
-      osx_arm64_numpy1.21python3.9.____cpythontiledb2.15._:
-        CONFIG: osx_arm64_numpy1.21python3.9.____cpythontiledb2.15._
-        UPLOAD_PACKAGES: 'True'
-      osx_arm64_numpy1.21python3.9.____cpythontiledb2.16._:
-        CONFIG: osx_arm64_numpy1.21python3.9.____cpythontiledb2.16._
-        UPLOAD_PACKAGES: 'True'
-      osx_arm64_numpy1.23python3.11.____cpythontiledb2.15._:
-        CONFIG: osx_arm64_numpy1.23python3.11.____cpythontiledb2.15._
-        UPLOAD_PACKAGES: 'True'
-      osx_arm64_numpy1.23python3.11.____cpythontiledb2.16._:
-        CONFIG: osx_arm64_numpy1.23python3.11.____cpythontiledb2.16._
+      osx_arm64_numpy1.23python3.11.____cpython:
+        CONFIG: osx_arm64_numpy1.23python3.11.____cpython
         UPLOAD_PACKAGES: 'True'
   timeoutInMinutes: 360
 
