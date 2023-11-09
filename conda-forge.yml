@@ -11,6 +11,3 @@ test_on_native_only: true
 conda_build:
   pkg_format: '2'
 upload_on_branch: main
-channels:
-  targets:
-    - ["tiledb", "main"]
