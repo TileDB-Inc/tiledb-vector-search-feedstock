@@ -44,7 +44,7 @@ requirements:
     - python
     - {{ pin_compatible('numpy') }}
     - scikit-learn
-    - tiledb >=2.17.0,<2.18
+    - tiledb >=2.18.0,<2.19
     - tiledb-py
     - libopenblas
     - openblas
