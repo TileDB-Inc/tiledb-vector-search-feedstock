@@ -1,0 +1,22 @@
+on:
+  repository_dispatch:
+
+jobs:
+  release:
+    if: ${{ github.event.client_payload.passed }}
+    runs-on: ubuntu-latest
+    env:
+      VERSION: ${{ github.event.client_payload.version }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Set version
+        run: |
+          sed -i "s/version = \".*\"/version = \"$VERSION\"/g" recipe/meta.yaml
+      - name: Commit, push and create pull request
+        run: |
+          git checkout -b ci/$VERSION
+          git add recipe/meta.yaml
+          git commit -m "[CI] Bump up version to $VERSION"
+          git push origin ${{ github.ref_name }}
+          gh pr create -B ${{ github.event.repository.default_branch }} -H ci/$VERSION --title "[CI] Bump up version to $VERSION" --body "Set recipe version"
