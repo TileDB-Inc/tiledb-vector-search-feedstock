@@ -49,7 +49,7 @@ requirements:
 
 test:
   imports:
-    - tiledb_vector_search
+    - tiledb.vector_search
   commands:
     - pip check
   requires:
