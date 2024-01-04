@@ -47,6 +47,14 @@ requirements:
     - libopenblas
     - openblas
 
+test:
+  imports:
+    - tiledb_vector_search
+  commands:
+    - pip check
+  requires:
+    - pip
+
 about:
   home: https://tiledb.com
   license: MIT
