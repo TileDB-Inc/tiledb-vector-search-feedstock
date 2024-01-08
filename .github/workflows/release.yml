@@ -13,6 +13,9 @@ jobs:
       - name: Set version
         run: |
           sed -i "s/version = \".*\"/version = \"$VERSION\"/g" recipe/meta.yaml
+      - name: Reset build number
+        run: |
+          sed -i s/"  number: [0-9]\+"/"  number: 0"/ recipe/meta.yaml
       - name: Commit, push and create pull request
         run: |
           git checkout -b ci/$VERSION
