@@ -40,6 +40,7 @@ requirements:
     - scikit-build
     - libopenblas
     - openblas
+    - lz4 1.9.4 # [py==39]
   run:
     - python
     - {{ pin_compatible('numpy') }}
@@ -48,6 +49,7 @@ requirements:
     - tiledb-py
     - libopenblas
     - openblas
+    - lz4 1.9.4 # [py==39]
 
 about:
   home: https://tiledb.com
