@@ -1,15 +1,12 @@
 {% set name = "tiledb-vector-search" %}
 {% set version = "0.0.21" %}
-{% set sha256 = "" %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  # NOTE: using git versions so that setuptools_scm works, until we build from PyPI
-  #url: https://github.com/TileDB-Inc/feature-vector-prototype/archive/{{ version }}.tar.gz
-  #sha256: {{ sha256 }}
+  # NOTE: using git versions so that setuptools_scm works
   git_url: https://github.com/TileDB-Inc/TileDB-Vector-Search.git
   git_rev: {{ version }}
   #git_depth: 1 # (Defaults to -1/not shallow)
