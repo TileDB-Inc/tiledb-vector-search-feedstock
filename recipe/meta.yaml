@@ -1,21 +1,20 @@
 {% set name = "tiledb-vector-search" %}
 {% set version = "0.1.0" %}
-{% set sha256 = "" %}
+{% set url = "https://files.pythonhosted.org/packages/39/c0/37f21602a8d1ac1e7c8e91b07059fd97576ada3e8b774d42792caa4b8a6b/tiledb_vector_search-0.1.0.tar.gz" %}
+{% set sha256 = "7b2b04915c5393c601443c688bbbb7dd25bba54f1292c22ac3437786538fa6b2" %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  # NOTE: using git versions so that setuptools_scm works, until we build from PyPI
-  #url: https://github.com/TileDB-Inc/feature-vector-prototype/archive/{{ version }}.tar.gz
-  #sha256: {{ sha256 }}
-  git_url: https://github.com/TileDB-Inc/TileDB-Vector-Search.git
-  git_rev: {{ version }}
-  #git_depth: 1 # (Defaults to -1/not shallow)
+  url: {{ url }}
+  sha256: {{ sha256 }}
 
 build:
   number: 0
+  script: python -m pip install --no-deps --ignore-installed .
+
 requirements:
   build:
     - {{ compiler('cxx') }}
@@ -30,14 +29,13 @@ requirements:
   host:
     - pip
     - wheel
-    - setuptools
+    - scikit-build-core
     - setuptools_scm
     - python
     - numpy
     - pybind11
     - tiledb >=2.20,<2.21
     - tiledb-py
-    - scikit-build
     - libopenblas
     - openblas
   run:
