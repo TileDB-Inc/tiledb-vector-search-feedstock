@@ -48,14 +48,12 @@ requirements:
     - openblas
 
 test:
-  imports:
-    - tiledb.vector_search
-  commands:
-    - pip check
   requires:
     - pip
-    - pip:
-        - tiledb-cloud
+  commands:
+    - pip install --prefer-binary tiledb-cloud
+    - pip check
+    - python -c "import tiledb.vector_search"
 
 about:
   home: https://tiledb.com
