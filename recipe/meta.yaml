@@ -54,6 +54,8 @@ test:
     - pip check
   requires:
     - pip
+    - pip:
+        - tiledb-cloud
 
 about:
   home: https://tiledb.com
