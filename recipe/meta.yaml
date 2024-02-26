@@ -47,6 +47,14 @@ requirements:
     - libopenblas
     - openblas
 
+test:
+  requires:
+    - pip
+  commands:
+    - pip install --prefer-binary tiledb-cloud
+    - pip check
+    - python -c "import tiledb.vector_search"
+
 about:
   home: https://tiledb.com
   license: MIT
