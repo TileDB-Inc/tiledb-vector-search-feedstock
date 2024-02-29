@@ -29,7 +29,7 @@ script:
   - export sha="$TRAVIS_COMMIT"
   - export remote_url="https://github.com/$TRAVIS_REPO_SLUG"
   - export FEEDSTOCK_NAME=$(basename ${TRAVIS_REPO_SLUG})
-  - export UPLOAD_ON_BRANCH="main"
+  - export UPLOAD_ON_BRANCH="Release-0.0.22"
   - if [[ "${TRAVIS_PULL_REQUEST:-}" == "false" ]]; then export IS_PR_BUILD="False"; else export IS_PR_BUILD="True"; fi
 
 
