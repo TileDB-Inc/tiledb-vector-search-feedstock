@@ -10,4 +10,4 @@ provider:
 test_on_native_only: true
 conda_build:
   pkg_format: '2'
-upload_on_branch: main
+upload_on_branch: Release-0.0.23
