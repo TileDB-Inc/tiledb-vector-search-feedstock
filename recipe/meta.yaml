@@ -1,6 +1,6 @@
 {% set name = "tiledb-vector-search" %}
-{% set version = "0.1.0" %}
-{% set sha256 = "7b2b04915c5393c601443c688bbbb7dd25bba54f1292c22ac3437786538fa6b2" %}
+{% set version = "0.0.23" %}
+{% set sha256 = "de70ccb5297dc35127b4aeb63c3abac32ba6ce34d1856fae1d6b493594ff5ddd" %}
 
 package:
   name: {{ name }}
@@ -34,7 +34,7 @@ requirements:
     - python
     - numpy
     - pybind11
-    - tiledb >=2.20,<2.21
+    - tiledb >=2.19,<2.20
     - tiledb-py
     - libopenblas
     - openblas
