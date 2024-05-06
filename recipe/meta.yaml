@@ -16,7 +16,7 @@ source:
 
 build:
   number: 0
-  script: {{ PYTHON }} -m pip install --no-deps --ignore-installed .
+  script: TileDB_DIR=${PREFIX} {{ PYTHON }} -m pip install --no-dependencies --ignore-installed .
   skip: true # [win]
 
 requirements:
