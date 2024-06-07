@@ -16,7 +16,7 @@ source:
 
 build:
   number: 0
-  script: {{ PYTHON }} -m pip install --no-build-isolation --no-deps --ignore-installed -v .
+  script: TILEDB_PATH=${PREFIX} {{ PYTHON }} -m pip install --no-build-isolation --no-deps --ignore-installed -v .
   skip: true # [win]
 
 requirements:
