@@ -1,16 +1,13 @@
 MACOSX_SDK_VERSION:  # [osx and x86_64]
   - 10.15            # [osx and x86_64]
-MACOSX_DEPLOYMENT_TARGET:  # [osx and x86_64]
-  - "10.15"                # [osx and x86_64]
+c_stdlib_version:    # [osx and x86_64]
+  - "10.15"          # [osx and x86_64]
 channel_targets:
   - tiledb main
 channel_sources:
   - conda-forge
 channel_priority:
   - strict
-tiledb:
-- '2.15.*'
-- '2.16.*'
 numpy:
   - 1.22
   - 1.22
