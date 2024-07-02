@@ -57,27 +57,6 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>linux_aarch64_numpy1.22python3.10.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/TileDB-Inc/CI/_build/latest?definitionId=48&branchName=main">
-                  <img src="https://dev.azure.com/TileDB-Inc/CI/_apis/build/status/tiledb-vector-search-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_numpy1.22python3.10.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_aarch64_numpy1.22python3.9.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/TileDB-Inc/CI/_build/latest?definitionId=48&branchName=main">
-                  <img src="https://dev.azure.com/TileDB-Inc/CI/_apis/build/status/tiledb-vector-search-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_numpy1.22python3.9.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_aarch64_numpy1.23python3.11.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/TileDB-Inc/CI/_build/latest?definitionId=48&branchName=main">
-                  <img src="https://dev.azure.com/TileDB-Inc/CI/_apis/build/status/tiledb-vector-search-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_numpy1.23python3.11.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
               <td>osx_64_numpy1.22python3.10.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/TileDB-Inc/CI/_build/latest?definitionId=48&branchName=main">
