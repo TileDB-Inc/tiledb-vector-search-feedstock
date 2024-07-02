@@ -45,11 +45,8 @@ requirements:
     - openblas
   run:
     - python
-    - {{ pin_compatible('numpy') }}
     - scikit-learn
-    - tiledb >=2.24,<2.25
     - tiledb-py
-    - libopenblas
     - openblas
 
 test:
