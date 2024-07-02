@@ -1,10 +1,11 @@
 {% set name = "tiledb-vector-search" %}
-{% set version = "0.5.1" %}
-{% set sha256 = "a77b1e6323432e2e48d83002867d0f3da187689dd3ee4ea0efad0729f973ecd2" %}
+{% set version = "0.6.0" %}
+{% set sha256 = "4cd9abf9ed585f4ea315812eb54eb9969c0b97be2df62f9ca61838d545065f21" %}
 # Pro-tip:
 # * Visit https://pypi.org/project/tiledb-vector-search/i.j.k/#files in your browser
-# * Download
-# * shasum -a 256 it
+# * Then either:
+#   a. Download `tiledb_vector_search-i.j.j.tar.gz` and run `shasum -a 256 it`
+#   b. Click `view hashes` for `tiledb_vector_search-i.j.j.tar.gz` and copy the SHA256 hash
 
 package:
   name: {{ name }}
