@@ -22,7 +22,7 @@ build:
   script: >-                                                # [not (linux and py==39)]
     TILEDB_PATH=${PREFIX} {{ PYTHON }} -m pip install       # [not (linux and py==39)]
     --no-build-isolation --no-deps --ignore-installed -v .  # [not (linux and py==39)]
-    -C skbuild.cmake.build_type="Release"                   # [not (linux and py==39)]
+    --config-settings=cmake.build-type="Release"            # [not (linux and py==39)]
     --config-settings=install.strip=true                    # [not (linux and py==39)]
   skip: true # [win]
 
