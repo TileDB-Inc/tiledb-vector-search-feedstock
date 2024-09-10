@@ -17,6 +17,11 @@ source:
 
 build:
   number: 0
+  script_env:
+    # Fix for pybind build error https://github.com/pybind/pybind11/issues/5224
+    - CFLAGS='-Wno-array-bounds -Wno-stringop-overread'
+    - CCFLAGS='-Wno-array-bounds -Wno-stringop-overread'
+    - CXXFLAGS='-Wno-array-bounds -Wno-stringop-overread'
   script: TILEDB_PATH=${PREFIX} {{ PYTHON }} -m pip install --no-build-isolation --no-deps --ignore-installed -v .  # [linux and py==39]
   # Do not include debug info when building binaries that won't be deployed to TileDB Cloud
   script: >-                                                # [not (linux and py==39)]
