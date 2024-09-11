@@ -6,6 +6,7 @@
 # * Then either:
 #   a. Download `tiledb_vector_search-i.j.j.tar.gz` and run `shasum -a 256 it`
 #   b. Click `view hashes` for `tiledb_vector_search-i.j.j.tar.gz` and copy the SHA256 hash
+# test
 
 package:
   name: {{ name }}
