@@ -22,7 +22,11 @@ build:
     - CFLAGS='-Wno-array-bounds'
     - CCFLAGS='-Wno-array-bounds'
     - CXXFLAGS='-Wno-array-bounds'
-  script: TILEDB_PATH=${PREFIX} {{ PYTHON }} -m pip install --no-build-isolation --no-deps --ignore-installed -v .
+  script: >-
+    TILEDB_PATH=${PREFIX} {{ PYTHON }} -m pip install
+    --no-build-isolation --no-deps --ignore-installed -v .
+    --config-settings=cmake.build-type="Release"
+    --config-settings=install.strip=true
   skip: true # [win]
 
 requirements:
