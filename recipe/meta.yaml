@@ -17,11 +17,6 @@ source:
 
 build:
   number: 0
-  script_env:
-    # Fix for pybind build error https://github.com/pybind/pybind11/issues/5224
-    - CFLAGS='-Wno-array-bounds'
-    - CCFLAGS='-Wno-array-bounds'
-    - CXXFLAGS='-Wno-array-bounds'
   script: >-
     TILEDB_PATH=${PREFIX} {{ PYTHON }} -m pip install
     --no-build-isolation --no-deps --ignore-installed -v .
