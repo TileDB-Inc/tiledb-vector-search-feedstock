@@ -1,6 +1,6 @@
 {% set name = "tiledb-vector-search" %}
-{% set version = "0.8.0" %}
-{% set sha256 = "47bf2884b37fae21fbba430a8cb27e92a0640af80d738577c1fcc6e1794c7479" %}
+{% set version = "0.8.1" %}
+{% set sha256 = "bdfcca9cb4a4c946f26e91077481329deb47db2aa3efc9252faa2ffae2decc3e" %}
 # Pro-tip:
 # * Visit https://pypi.org/project/tiledb-vector-search/i.j.k/#files in your browser
 # * Then either:
@@ -17,13 +17,11 @@ source:
 
 build:
   number: 0
-  script: TILEDB_PATH=${PREFIX} {{ PYTHON }} -m pip install --no-build-isolation --no-deps --ignore-installed -v .  # [linux and py==39]
-  # Do not include debug info when building binaries that won't be deployed to TileDB Cloud
-  script: >-                                                # [not (linux and py==39)]
-    TILEDB_PATH=${PREFIX} {{ PYTHON }} -m pip install       # [not (linux and py==39)]
-    --no-build-isolation --no-deps --ignore-installed -v .  # [not (linux and py==39)]
-    --config-settings=cmake.build-type="Release"            # [not (linux and py==39)]
-    --config-settings=install.strip=true                    # [not (linux and py==39)]
+  script: >-
+    TILEDB_PATH=${PREFIX} {{ PYTHON }} -m pip install
+    --no-build-isolation --no-deps --ignore-installed -v .
+    --config-settings=cmake.build-type="Release"
+    --config-settings=install.strip=true
   skip: true # [win]
 
 requirements:
