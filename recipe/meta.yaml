@@ -1,6 +1,6 @@
 {% set name = "tiledb-vector-search" %}
-{% set version = "0.8.1" %}
-{% set sha256 = "bdfcca9cb4a4c946f26e91077481329deb47db2aa3efc9252faa2ffae2decc3e" %}
+{% set version = "0.9.0" %}
+{% set sha256 = "7091d9876ee567ff4d284b5e025a49753c033e6b2b463dcb2671b787ac8d5c00" %}
 # Pro-tip:
 # * Visit https://pypi.org/project/tiledb-vector-search/i.j.k/#files in your browser
 # * Then either:
@@ -44,7 +44,7 @@ requirements:
     - python
     - numpy
     - pybind11
-    - tiledb >=2.25,<2.26
+    - tiledb >=2.26,<2.27
     - tiledb-py
     - libopenblas
     - openblas
