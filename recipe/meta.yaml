@@ -44,7 +44,7 @@ requirements:
     - python
     - numpy
     - pybind11
-    - tiledb >=2.25,<2.26
+    - tiledb >=2.26,<2.27
     - tiledb-py
     - libopenblas
     - openblas
