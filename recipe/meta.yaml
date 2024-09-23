@@ -45,7 +45,7 @@ requirements:
     - numpy
     - pybind11
     - tiledb >=2.26,<2.27
-jparismorgan/update-0.9.0    - tiledb-py
+    - tiledb-py
     - libopenblas
     - openblas
   run:
