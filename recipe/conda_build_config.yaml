@@ -20,3 +20,9 @@ python_impl:
   - cpython
   - cpython
   - cpython
+is_python_min:
+  - 3.9
+  - 3.10
+  - 3.11
+zipped_keys:
+  - [python, python_impl, numpy]
