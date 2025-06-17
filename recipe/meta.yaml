@@ -16,7 +16,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   script: >-
     TILEDB_PATH=${PREFIX} {{ PYTHON }} -m pip install
     --no-build-isolation --no-deps --ignore-installed -v .
