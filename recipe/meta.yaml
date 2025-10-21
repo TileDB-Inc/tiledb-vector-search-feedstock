@@ -1,6 +1,6 @@
 {% set name = "tiledb-vector-search" %}
 {% set version = "0.15.0" %}
-{% set sha256 = "101a6080c9e0d52efcbd3140369c5311dbc4ce58" %}
+{% set sha256 = "a55ad76ca7074b03f61ec39faff9e81f862794ffcd1801a757c0292a5e76cffc" %}
 # Pro-tip:
 # * Visit https://pypi.org/project/tiledb-vector-search/i.j.k/#files in your browser
 # * Then either:
