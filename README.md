@@ -211,7 +211,6 @@ Feedstock Maintainers
 
 * [@NikolaosPapailiou](https://github.com/NikolaosPapailiou/)
 * [@dudoslav](https://github.com/dudoslav/)
-* [@ihnorton](https://github.com/ihnorton/)
 * [@jdblischak](https://github.com/jdblischak/)
 * [@johnkerl](https://github.com/johnkerl/)
 * [@jparismorgan](https://github.com/jparismorgan/)
