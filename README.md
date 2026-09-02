@@ -214,6 +214,5 @@ Feedstock Maintainers
 * [@jdblischak](https://github.com/jdblischak/)
 * [@johnkerl](https://github.com/johnkerl/)
 * [@jparismorgan](https://github.com/jparismorgan/)
-* [@shelnutt2](https://github.com/shelnutt2/)
 * [@teo-tsirpanis](https://github.com/teo-tsirpanis/)
 
